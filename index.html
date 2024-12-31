@@ -3,10 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./public/main.css">
+    <link rel="stylesheet" href="./public/css/main.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <!-- #region wrapper-->
+    <div class="wrapper">
+        <!-- #region menu-->
+         <div class="menu">
+            <nav class="menu-nav">
+                <div class="menu-nav-item"><a class="menu-nav-item-link" href="#">home</a></div>
+                <div class="menu-nav-item"><a class="menu-nav-item-link" href="#">about</a></div>
+                <div class="menu-nav-item"><a class="menu-nav-item-link" href="#">contact</a></div>
+                <div class="menu-nav-item"><a class="menu-nav-item-link" href="#">gallery</a></div>
+                <button class="close">&times;</button>
+            </nav>
+         </div>
+         <div class="hambergur">
+            <div class="hambergur-line"></div>
+            <div class="hambergur-line"></div>
+            <div class="hambergur-line"></div>
+         </div>
+         <!-- #endregion -->
+    </div>
+    <!-- #endregion -->
+     <script>
+           let hambergur=document.querySelector(".hambergur")
+           let menu=document.querySelector(".menu")
+           let closeBtn=document.querySelector(".close")
+           hambergur.addEventListener("click",function(){
+            menu.style.top="0"
+           })
+           closeBtn.addEventListener("click",function(){
+            menu.style.top="-100%"
+           })
+     </script>
 </body>
 </html>

@@ -1,0 +1,3 @@
+@import"./media/setting.css";
+@import"./media/desktop/desktop.css" only screen and (min-width:1000px);
+@import"./media/mobile/mobile.css" only screen and (min-width:340px);
